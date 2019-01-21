@@ -1,0 +1,101 @@
+*{margin: 0;padding: 0;}
+    /*
+       轮播图
+    */
+.wrapper ul,.ol{ list-style: none;}
+.wrapper{
+    width: 1200px;
+    height: 535px;
+    /*margin: 100px auto;*/
+    overflow: hidden;
+    position: relative;
+}
+.wrapper ul{
+    position:relative;
+}
+.wrapper ul li{
+    position:absolute;
+    top:0;
+    left:0;
+}
+.wrapper .ol{
+    position: absolute;
+    right: 500px;
+    bottom: 10px;
+    width: 190px;
+}
+.wrapper .ol div{
+    float: left;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: default;
+    background-color: #abc;
+}
+.wrapper .ol div.current{
+    background-color: darkred;
+}
+/*双十一获奖名单*/
+.pic{
+	height:60px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+/*倒计时活动*/
+.day .new{
+    background:url(../img/mm.jpg) no-repeat scroll 0px 0px;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    color: #9a9a9a;
+    font-size: 18px;
+}
+.day .new #second{
+    color: #FFFFFF;
+    margin-right: 10px;
+    float: right;
+}
+.day .new #second em{padding:0 20px;color:#ff0000}
+/*fiveData数据*/
+.everyday{
+    width:1200px;
+    margin: 10px 0 0 0;
+    color:#000000;
+}
+.everyday>li{
+    float: left;
+    width: 232px;
+    margin-right: 10px;
+}
+.everyday li a h4{
+    color: #000000;padding-top: 2px}
+.everyday li a p{color:#CCCCCC;}
+.everyday>li:nth-of-type(5){margin-right: 0}
+.everyday>li>div{width:100%;}
+.everyday li div b{float: left;color: darkred}
+.everyday li div span{float: right;color:#000000;}
+/*优选推荐*/
+.good{margin-top:50px;}
+.good h2{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 18px;
+    color:#9a9a9a;
+}
+/*推荐下的recommend*/
+.recommend .left{
+    width:590px;
+    float: left;
+}
+.recommend .middle{
+     width:290px;
+    float: left;
+ }
+.recommend .right{
+    width:286px;
+    float: left;
+}
